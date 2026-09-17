@@ -13,7 +13,7 @@ typedef struct NO {
 typedef NO* arvAVL;
 
 arvAVL* criarARV() {
-    arvAVL* raiz = malloc sizeof(arvAVL);
+    arvAVL* raiz = malloc(sizeof(arvAVL));
 
     if(raiz != NULL) *raiz = NULL;
     return raiz;
