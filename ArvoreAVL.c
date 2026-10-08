@@ -73,6 +73,8 @@ void arv_inserir(arvAVL* raiz, int chv) {
     if(chv < (*raiz)->chv) arv_inserir(&(*raiz)->esq, chv);
     else 
         arv_inserir(&(*raiz)->dir, chv);
+
+    f_balanceamento(*raiz);
 }
 
 void rotacao_LL(arvAVL* raiz) {
